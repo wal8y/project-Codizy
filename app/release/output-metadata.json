@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.CodizyEnv.codizy",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 43,
+      "versionName": "4.3",
+      "outputFile": "app-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

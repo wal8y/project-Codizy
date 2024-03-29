@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.Codizy2.codizy.Res">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ads:layout_constraintBottom_toTopOf="@+id/adView3"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_semibold"
+                android:text="Codizy App - Python Learning Resources"
+                android:textColor="#FAFAFA"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_semibold"
+                android:text="1. Interactive Python Tutorials "
+                android:textColor="#FAFAFA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/codecademy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C60000FD"
+                android:onClick="openLink"
+                android:text="Codecademy" />
+
+            <Button
+                android:id="@+id/sololearn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C60000FD"
+                android:onClick="openLink"
+                android:text="sololearn" />
+
+            <Button
+                android:id="@+id/w3pd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#179700"
+                android:onClick="openLink"
+                android:text="W3schools" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_semibold"
+                android:text="2. Coding Practice"
+                android:textColor="#FAFAFA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/hackerrank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C60000FD"
+                android:onClick="openLink"
+                android:text="hackerrank" />
+
+            <Button
+                android:id="@+id/pracpy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C60000FD"
+                android:onClick="openLink"
+                android:text="Practicepython" />
+
+            <Button
+                android:id="@+id/w3pe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E2179A00"
+                android:onClick="openLink"
+                android:text="W3schools" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_semibold"
+                android:text="3. Project-Based Learning"
+                android:textColor="#FAFAFA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/apg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C69400FD"
+                android:onClick="openLink"
+                android:text="Awesome python on github" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_semibold"
+                android:text="4. Documentation and Reference"
+                android:textColor="#FAFAFA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/pydocs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C60000FD"
+                android:onClick="openLink"
+                android:text="python docs" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_semibold"
+                android:text="5. Online Communities"
+                android:textColor="#FAFAFA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/sof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C35429"
+                android:onClick="openLink"
+                android:text="stackoverflow" />
+
+            <Button
+                android:id="@+id/reddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C6C50028"
+                android:onClick="openLink"
+                android:text="reddit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#0000FE"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="sendHome"
+            ads:backgroundTint="#00000000"
+            ads:elevation="0dp"
+            ads:maxImageSize="38dp"
+            ads:srcCompat="@drawable/home" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="sendInte"
+            ads:backgroundTint="#00000000"
+            ads:elevation="0dp"
+            ads:maxImageSize="37dp"
+            ads:srcCompat="@drawable/gear" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="sendRes"
+            ads:backgroundTint="#00000000"
+            ads:elevation="0dp"
+            ads:maxImageSize="37dp"
+            ads:srcCompat="@drawable/res" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="sendInfo"
+            ads:backgroundTint="#00000000"
+            ads:elevation="0dp"
+            ads:maxImageSize="37dp"
+            ads:srcCompat="@android:drawable/ic_dialog_info" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2671585248655668/8520709575"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
