@@ -27,7 +27,6 @@ public class HomePage extends AppCompatActivity {
     Intent intent;
     Button[] steps = new Button[5];
     Button finish;
-    private AdView mAdView;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,40 +36,6 @@ public class HomePage extends AppCompatActivity {
             setFirstEntry();
         }else {
             setHomePage();
-            MobileAds.initialize(this, new OnInitializationCompleteListener() {
-                @Override
-                public void onInitializationComplete(InitializationStatus initializationStatus) {
-                }
-            });
-            mAdView = findViewById(R.id.adView2);
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
-            mAdView.setAdListener(new AdListener() {
-                @Override
-                public void onAdClicked() {
-                    super.onAdClicked();
-                }
-                @Override
-                public void onAdClosed() {
-                    super.onAdClosed();
-                }
-                @Override
-                public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                    super.onAdFailedToLoad(loadAdError);
-                }
-                @Override
-                public void onAdImpression() {
-                    super.onAdImpression();
-                }
-                @Override
-                public void onAdLoaded() {
-                    super.onAdLoaded();
-                }
-                @Override
-                public void onAdOpened() {
-                    super.onAdOpened();
-                }
-            });
         }
     }
 

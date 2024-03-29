@@ -18,47 +18,12 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class info extends AppCompatActivity {
-    private AdView madv;
     Intent intent;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        madv = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        madv.loadAd(adRequest);
-        madv.setAdListener(new AdListener() {
-            @Override
-            public void onAdClicked() {
-                super.onAdClicked();
-            }
-            @Override
-            public void onAdClosed() {
-                super.onAdClosed();
-            }
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                super.onAdFailedToLoad(loadAdError);
-            }
-            @Override
-            public void onAdImpression() {
-                super.onAdImpression();
-            }
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-            }
-            @Override
-            public void onAdOpened() {
-                super.onAdOpened();
-            }
-        });
     }
 
     public void sendHome(View v){

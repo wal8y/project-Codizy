@@ -19,46 +19,11 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class Res extends AppCompatActivity {
 
-    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res);
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        mAdView = findViewById(R.id.adView3);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-        mAdView.setAdListener(new AdListener() {
-            @Override
-            public void onAdClicked() {
-                super.onAdClicked();
-            }
-            @Override
-            public void onAdClosed() {
-                super.onAdClosed();
-            }
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                super.onAdFailedToLoad(loadAdError);
-            }
-            @Override
-            public void onAdImpression() {
-                super.onAdImpression();
-            }
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-            }
-            @Override
-            public void onAdOpened() {
-                super.onAdOpened();
-            }
-        });
     }
 
     public void openLink(View view){
