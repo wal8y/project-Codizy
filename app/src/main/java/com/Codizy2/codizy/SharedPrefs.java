@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharedPrefs {
+
     SharedPreferences sharedRefs;
     public SharedPrefs(Context context){
         sharedRefs=context.getSharedPreferences("myRefs",Context.MODE_PRIVATE);

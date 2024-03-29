@@ -20,7 +20,6 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 public class Res extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

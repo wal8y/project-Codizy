@@ -22,7 +22,6 @@ public class question extends AppCompatActivity {
     private int i=0;
     private int thisLvl;
 
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

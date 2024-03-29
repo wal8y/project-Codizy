@@ -30,7 +30,6 @@ public class interprate extends AppCompatActivity {
         output=findViewById(R.id.output);
         linenumber=findViewById(R.id.lineNumber);
         code=findViewById(R.id.code);
-
         if (!Python.isStarted()){
             Python.start(new AndroidPlatform(this));
         }
