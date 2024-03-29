@@ -19,6 +19,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class info extends AppCompatActivity {
     Intent intent;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

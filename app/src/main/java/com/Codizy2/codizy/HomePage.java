@@ -27,6 +27,7 @@ public class HomePage extends AppCompatActivity {
     Intent intent;
     Button[] steps = new Button[5];
     Button finish;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
